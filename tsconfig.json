@@ -7,16 +7,25 @@
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
+        "rootDir": "src",
         "outDir": "dist",
         "baseUrl": ".",
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ],
         "paths": {
             "*": [
                 "node_modules/*",
-                "src/types/*"
+                "types/*"
             ]
         }
     },
     "include": [
         "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "types"
     ]
 }
